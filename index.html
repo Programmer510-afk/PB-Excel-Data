@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Excel-Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="dropdown">
+      <button id="dropdown-button" class="custom-btn btn-5" onclick="toggleDropdown()">
+        <span class="shiny"></span> <!-- 🔁 এটিই শাইনি ইফেক্ট -->
+        <span id="dropdown-selected" class="btn-text"><b>Loading...</b></span>
+        <span class="dropdown-arrow"></span>
+      </button>
+
+      <div id="dropdown-menu" class="dropdown-content">
+      <!-- অপশন লিস্ট এখানে JavaScript দিয়ে আসবে -->
+      </div>
+  </div>
+
+    
+    
+    <table id="col2-table" class="box">
+      <tr>
+        <td class="highlight">-</td>
+        <td class="highlight">-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="highlight">-</td>
+        <td class="highlight">-</td>
+        <td>-</td>
+      </tr>
+    </table>
+    
+    <table id="col3-table" class="box">
+      <tr class="highlight">
+        <td colspan="2">-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+    
+    <table id="col4-table" class="box">
+      <tr class="highlight">
+        <td colspan="2">-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+    
+    <table id="col5-table" class="box">
+      
+      <tr class="highlight">
+        <td colspan="5">-</td>
+      </tr>
+      
+      <!-- Data rows এখানে আসবে, প্রতি row এ ৫টি করে td -->
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+    
+    
+  </div>
+  
+  <!-- SheetJS লাইব্রেরি -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  
+  <!-- আপনার নিজের JS ফাইল -->
+  <script src="script.js"></script>
+  
+  
+</body>
+
+</html>
